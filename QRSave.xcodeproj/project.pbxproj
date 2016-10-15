@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D5EE1951DAFCD1D00AAB36C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5EE1941DAFCD1D00AAB36C /* main.m */; };
+		4D5EE1981DAFCD1D00AAB36C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5EE1971DAFCD1D00AAB36C /* AppDelegate.m */; };
+		4D5EE19A1DAFCD1D00AAB36C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D5EE1991DAFCD1D00AAB36C /* Assets.xcassets */; };
+		4D5EE19D1DAFCD1D00AAB36C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5EE19B1DAFCD1D00AAB36C /* LaunchScreen.storyboard */; };
+		4D5EE1A61DAFCD3300AAB36C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5EE1A51DAFCD3300AAB36C /* RootViewController.m */; };
+		4D5EE1A91DAFD0BD00AAB36C /* ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5EE1A81DAFD0BD00AAB36C /* ListCell.m */; };
+		4D5EE1AC1DAFD24B00AAB36C /* ListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5EE1AB1DAFD24B00AAB36C /* ListModel.m */; };
+		4D5EE1AF1DAFD85000AAB36C /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5EE1AE1DAFD85000AAB36C /* ScanViewController.m */; };
+		4D5EE1B21DAFE3DA00AAB36C /* UIImage+Helps.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5EE1B11DAFE3DA00AAB36C /* UIImage+Helps.m */; };
+		4DF98BEC1DB11D13004914B5 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF98BEB1DB11D13004914B5 /* Realm.framework */; };
+		4DF98BEE1DB11D36004914B5 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF98BEB1DB11D13004914B5 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4DF98BF91DB1D94E004914B5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF98BF81DB1D94E004914B5 /* DetailViewController.m */; };
+		4DF98BFC1DB1DE02004914B5 /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF98BFB1DB1DE02004914B5 /* QRViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DF98BEF1DB11D36004914B5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4DF98BEE1DB11D36004914B5 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4D5EE1901DAFCD1D00AAB36C /* QRSave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRSave.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D5EE1941DAFCD1D00AAB36C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D5EE1961DAFCD1D00AAB36C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4D5EE1971DAFCD1D00AAB36C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4D5EE1991DAFCD1D00AAB36C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D5EE19C1DAFCD1D00AAB36C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D5EE19E1DAFCD1D00AAB36C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D5EE1A41DAFCD3300AAB36C /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		4D5EE1A51DAFCD3300AAB36C /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		4D5EE1A71DAFD0BD00AAB36C /* ListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListCell.h; sourceTree = "<group>"; };
+		4D5EE1A81DAFD0BD00AAB36C /* ListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListCell.m; sourceTree = "<group>"; };
+		4D5EE1AA1DAFD24B00AAB36C /* ListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListModel.h; sourceTree = "<group>"; };
+		4D5EE1AB1DAFD24B00AAB36C /* ListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListModel.m; sourceTree = "<group>"; };
+		4D5EE1AD1DAFD85000AAB36C /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		4D5EE1AE1DAFD85000AAB36C /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		4D5EE1B01DAFE3DA00AAB36C /* UIImage+Helps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Helps.h"; sourceTree = "<group>"; };
+		4D5EE1B11DAFE3DA00AAB36C /* UIImage+Helps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Helps.m"; sourceTree = "<group>"; };
+		4DF98BEB1DB11D13004914B5 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		4DF98BF71DB1D94E004914B5 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		4DF98BF81DB1D94E004914B5 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		4DF98BFA1DB1DE02004914B5 /* QRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRViewController.h; sourceTree = "<group>"; };
+		4DF98BFB1DB1DE02004914B5 /* QRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D5EE18D1DAFCD1D00AAB36C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF98BEC1DB11D13004914B5 /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D5EE1871DAFCD1D00AAB36C = {
+			isa = PBXGroup;
+			children = (
+				4D5EE1921DAFCD1D00AAB36C /* QRSave */,
+				4D5EE1911DAFCD1D00AAB36C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D5EE1911DAFCD1D00AAB36C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D5EE1901DAFCD1D00AAB36C /* QRSave.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D5EE1921DAFCD1D00AAB36C /* QRSave */ = {
+			isa = PBXGroup;
+			children = (
+				4DF98BEB1DB11D13004914B5 /* Realm.framework */,
+				4D5EE1961DAFCD1D00AAB36C /* AppDelegate.h */,
+				4D5EE1971DAFCD1D00AAB36C /* AppDelegate.m */,
+				4D5EE1A41DAFCD3300AAB36C /* RootViewController.h */,
+				4D5EE1A51DAFCD3300AAB36C /* RootViewController.m */,
+				4DF98BFA1DB1DE02004914B5 /* QRViewController.h */,
+				4DF98BFB1DB1DE02004914B5 /* QRViewController.m */,
+				4DF98BF71DB1D94E004914B5 /* DetailViewController.h */,
+				4DF98BF81DB1D94E004914B5 /* DetailViewController.m */,
+				4D5EE1AD1DAFD85000AAB36C /* ScanViewController.h */,
+				4D5EE1AE1DAFD85000AAB36C /* ScanViewController.m */,
+				4D5EE1A71DAFD0BD00AAB36C /* ListCell.h */,
+				4D5EE1A81DAFD0BD00AAB36C /* ListCell.m */,
+				4D5EE1AA1DAFD24B00AAB36C /* ListModel.h */,
+				4D5EE1AB1DAFD24B00AAB36C /* ListModel.m */,
+				4D5EE1B01DAFE3DA00AAB36C /* UIImage+Helps.h */,
+				4D5EE1B11DAFE3DA00AAB36C /* UIImage+Helps.m */,
+				4D5EE1991DAFCD1D00AAB36C /* Assets.xcassets */,
+				4D5EE19B1DAFCD1D00AAB36C /* LaunchScreen.storyboard */,
+				4D5EE19E1DAFCD1D00AAB36C /* Info.plist */,
+				4D5EE1931DAFCD1D00AAB36C /* Supporting Files */,
+			);
+			path = QRSave;
+			sourceTree = "<group>";
+		};
+		4D5EE1931DAFCD1D00AAB36C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D5EE1941DAFCD1D00AAB36C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D5EE18F1DAFCD1D00AAB36C /* QRSave */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D5EE1A11DAFCD1D00AAB36C /* Build configuration list for PBXNativeTarget "QRSave" */;
+			buildPhases = (
+				4D5EE18C1DAFCD1D00AAB36C /* Sources */,
+				4D5EE18D1DAFCD1D00AAB36C /* Frameworks */,
+				4D5EE18E1DAFCD1D00AAB36C /* Resources */,
+				4DF98BEF1DB11D36004914B5 /* Embed Frameworks */,
+				4DF98BF01DB11E0C004914B5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRSave;
+			productName = QRSave;
+			productReference = 4D5EE1901DAFCD1D00AAB36C /* QRSave.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D5EE1881DAFCD1D00AAB36C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "中移(杭州)信息技术有限公司";
+				TargetAttributes = {
+					4D5EE18F1DAFCD1D00AAB36C = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = P779J43L8K;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 4D5EE18B1DAFCD1D00AAB36C /* Build configuration list for PBXProject "QRSave" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D5EE1871DAFCD1D00AAB36C;
+			productRefGroup = 4D5EE1911DAFCD1D00AAB36C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D5EE18F1DAFCD1D00AAB36C /* QRSave */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D5EE18E1DAFCD1D00AAB36C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5EE19A1DAFCD1D00AAB36C /* Assets.xcassets in Resources */,
+				4D5EE19D1DAFCD1D00AAB36C /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DF98BF01DB11E0C004914B5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D5EE18C1DAFCD1D00AAB36C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5EE1AC1DAFD24B00AAB36C /* ListModel.m in Sources */,
+				4D5EE1AF1DAFD85000AAB36C /* ScanViewController.m in Sources */,
+				4D5EE1981DAFCD1D00AAB36C /* AppDelegate.m in Sources */,
+				4DF98BF91DB1D94E004914B5 /* DetailViewController.m in Sources */,
+				4D5EE1B21DAFE3DA00AAB36C /* UIImage+Helps.m in Sources */,
+				4D5EE1A91DAFD0BD00AAB36C /* ListCell.m in Sources */,
+				4DF98BFC1DB1DE02004914B5 /* QRViewController.m in Sources */,
+				4D5EE1951DAFCD1D00AAB36C /* main.m in Sources */,
+				4D5EE1A61DAFCD3300AAB36C /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4D5EE19B1DAFCD1D00AAB36C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D5EE19C1DAFCD1D00AAB36C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D5EE19F1DAFCD1D00AAB36C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4D5EE1A01DAFCD1D00AAB36C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D5EE1A21DAFCD1D00AAB36C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P779J43L8K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QRSave",
+				);
+				INFOPLIST_FILE = QRSave/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmcchy.LittleC.QRSave;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bccb02fd-b35f-4e8b-b873-683b27762be1";
+				PROVISIONING_PROFILE_SPECIFIER = General_Profile;
+			};
+			name = Debug;
+		};
+		4D5EE1A31DAFCD1D00AAB36C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QRSave",
+				);
+				INFOPLIST_FILE = QRSave/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmcchy.LittleC.QRSave;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D5EE18B1DAFCD1D00AAB36C /* Build configuration list for PBXProject "QRSave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5EE19F1DAFCD1D00AAB36C /* Debug */,
+				4D5EE1A01DAFCD1D00AAB36C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D5EE1A11DAFCD1D00AAB36C /* Build configuration list for PBXNativeTarget "QRSave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5EE1A21DAFCD1D00AAB36C /* Debug */,
+				4D5EE1A31DAFCD1D00AAB36C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D5EE1881DAFCD1D00AAB36C /* Project object */;
+}
