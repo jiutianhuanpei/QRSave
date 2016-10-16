@@ -7,8 +7,9 @@
 //
 
 #import "DetailViewController.h"
+#import "ImageViewController.h"
 
-@interface DetailViewController ()
+@interface DetailViewController ()<UIViewControllerPreviewingDelegate>
 
 @property (nonatomic, strong) ListModel *model;
 
@@ -48,9 +49,38 @@
     
     _imgView.image = [UIImage imageWithData:_model.imgData];
     
-    UILongPressGestureRecognizer *pres = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
-    [_imgView addGestureRecognizer:pres];
+    
+    
+    if ([self respondsToSelector:@selector(traitCollection)])
+    {
+        if ([self.traitCollection respondsToSelector:@selector(forceTouchCapability)])
+        {
+            if (self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable)
+            {
+                [self registerForPreviewingWithDelegate:self sourceView:_imgView];
+                // 支持3D Touch
+            }
+            else
+            {
+                UILongPressGestureRecognizer *pres = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
+                [_imgView addGestureRecognizer:pres];
+                // 不支持3D Touch
+            }
+        }
+    }
 }
+
+#pragma mark - UIViewControllerPreviewingDelegate
+- (UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location {
+    ImageViewController *img = [[ImageViewController alloc] initWithImage:_imgView.image];
+    return img;
+}
+
+- (void)previewingContext:(id<UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit {
+    [self.navigationController pushViewController:viewControllerToCommit animated:false];
+}
+
+
 
 - (void)longPress:(UILongPressGestureRecognizer *)press {
     if (press.state != UIGestureRecognizerStateBegan) {
@@ -67,31 +97,7 @@
     [self presentViewController:alert animated:true completion:nil];
 }
 
-- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
-    
-    __weak typeof(self) SHB = self;
-    UILabel *alert = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 150, 80)];
-    alert.userInteractionEnabled = false;
-    alert.text = @"保存成功";
-    alert.textColor = [UIColor whiteColor];
-    alert.font = [UIFont systemFontOfSize:30];
-    alert.textAlignment = NSTextAlignmentCenter;
-    alert.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
-    alert.layer.cornerRadius = 10;
-    alert.layer.masksToBounds = true;
-    alert.center = self.view.center;
-    alert.alpha = 0;
-    [self.view addSubview:alert];
-    [UIView animateWithDuration:0.5 animations:^{
-        
-        alert.alpha = 1;
-    } completion:^(BOOL finished) {
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [SHB.navigationController popViewControllerAnimated:true];
-        });
-    }];
-    
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

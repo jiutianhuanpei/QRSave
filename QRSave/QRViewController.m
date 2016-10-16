@@ -10,8 +10,9 @@
 #import "UIImage+Helps.h"
 #import <Realm/Realm.h>
 #import "ListModel.h"
+#import "ImageViewController.h"
 
-@interface QRViewController ()
+@interface QRViewController ()<UIViewControllerPreviewingDelegate>
 
 @property (nonatomic, strong) UITextView *textView;
 @property (nonatomic, strong) UIImageView *imgView;
@@ -41,14 +42,41 @@
     _imgView.userInteractionEnabled = true;
     [self.view addSubview:_imgView];
     
-    UILongPressGestureRecognizer *pres = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
-    [_imgView addGestureRecognizer:pres];
+
+    
+    if ([self respondsToSelector:@selector(traitCollection)])
+    {
+        if ([self.traitCollection respondsToSelector:@selector(forceTouchCapability)])
+        {
+            if (self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable)
+            {
+                [self registerForPreviewingWithDelegate:self sourceView:_imgView];
+                // 支持3D Touch
+            }
+            else
+            {
+                UILongPressGestureRecognizer *pres = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
+                [_imgView addGestureRecognizer:pres];
+                // 不支持3D Touch
+            }
+        }
+    }
     
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [_textView becomeFirstResponder];
+}
+
+#pragma mark - UIViewControllerPreviewingDelegate
+- (UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location {
+    ImageViewController *img = [[ImageViewController alloc] initWithImage:_imgView.image];
+    return img;
+}
+
+- (void)previewingContext:(id<UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit {
+    [self.navigationController pushViewController:viewControllerToCommit animated:false];
 }
 
 #pragma mark - Action

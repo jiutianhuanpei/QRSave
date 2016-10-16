@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D1E21EE1DB396540031EC0A /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1E21ED1DB396540031EC0A /* ImageViewController.m */; };
 		4D5EE1951DAFCD1D00AAB36C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5EE1941DAFCD1D00AAB36C /* main.m */; };
 		4D5EE1981DAFCD1D00AAB36C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5EE1971DAFCD1D00AAB36C /* AppDelegate.m */; };
 		4D5EE19A1DAFCD1D00AAB36C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D5EE1991DAFCD1D00AAB36C /* Assets.xcassets */; };
@@ -37,6 +38,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D1E21EC1DB396540031EC0A /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		4D1E21ED1DB396540031EC0A /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		4D5EE1901DAFCD1D00AAB36C /* QRSave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRSave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5EE1941DAFCD1D00AAB36C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4D5EE1961DAFCD1D00AAB36C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 				4DF98BF81DB1D94E004914B5 /* DetailViewController.m */,
 				4D5EE1AD1DAFD85000AAB36C /* ScanViewController.h */,
 				4D5EE1AE1DAFD85000AAB36C /* ScanViewController.m */,
+				4D1E21EC1DB396540031EC0A /* ImageViewController.h */,
+				4D1E21ED1DB396540031EC0A /* ImageViewController.m */,
 				4D5EE1A71DAFD0BD00AAB36C /* ListCell.h */,
 				4D5EE1A81DAFD0BD00AAB36C /* ListCell.m */,
 				4D5EE1AA1DAFD24B00AAB36C /* ListModel.h */,
@@ -214,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D1E21EE1DB396540031EC0A /* ImageViewController.m in Sources */,
 				4D5EE1AC1DAFD24B00AAB36C /* ListModel.m in Sources */,
 				4D5EE1AF1DAFD85000AAB36C /* ScanViewController.m in Sources */,
 				4D5EE1981DAFCD1D00AAB36C /* AppDelegate.m in Sources */,

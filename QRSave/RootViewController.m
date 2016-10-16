@@ -45,12 +45,12 @@
     self.pickPhoto.center = CGPointMake(CGRectGetWidth(self.view.frame) / 2., CGRectGetHeight(self.view.frame) - CGRectGetHeight(_pickPhoto.frame));
     
     
-    
     _notification = [[RLMRealm defaultRealm] addNotificationBlock:^(RLMNotification  _Nonnull notification, RLMRealm * _Nonnull realm) {
         [self getData];
     }];
     
     [self getData];
+    
 }
 
 - (void)getData {

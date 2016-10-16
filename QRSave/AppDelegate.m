@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "QRViewController.h"
 
 @interface AppDelegate ()
 
@@ -26,10 +27,31 @@
     UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:rootVC];
     
     self.window.rootViewController = na;
+    [self set3DTouch];
     
     return YES;
 }
 
+- (void)set3DTouch {
+    UIApplicationShortcutIcon *icon = [UIApplicationShortcutIcon iconWithTemplateImageName:@"icon"];
+    
+    UIApplicationShortcutItem *item = [[UIApplicationShortcutItem alloc] initWithType:@"type1" localizedTitle:@"生成二维码 😘" localizedSubtitle:nil icon:icon userInfo:nil];
+    
+    [UIApplication sharedApplication].shortcutItems = @[item];
+}
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+    
+    NSString *type = shortcutItem.type;
+    UINavigationController *na = (UINavigationController *)self.window.rootViewController;
+    
+    if ([type isEqualToString:@"type1"]) {
+        QRViewController *qr = [[QRViewController alloc] init];
+        [na pushViewController:qr animated:false];
+    }
+    
+    NSLog(@"");
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
